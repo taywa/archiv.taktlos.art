@@ -10,25 +10,52 @@
 	outline: 0 none;
 }
 
+
 body {
-	font-family: Arial;
+	font-family: 'Gill Sans', Tahoma, Arial;
 	text-align: left;
 	font-size: 62.5%;  /* 1em = 10px , 1.4em = 14px */
 	color: #333;
-
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-textarea,
-input {
-	font-family: Arial;
-	/* for i0S */
-	 border-radius: 0;
-	 -webkit-appearance: none;
+.red{
+	color: #cc3333;
+}
+
+.grey{
+	color: #AAAAAA;
+}
+
+.black{
+	color: #000;
 }
 
 
+.magenta{
+	color: #ff0066;
+}
+
+.big{
+	font-size: 160%;
+}
+
+.normal{
+	font-weight: normal;
+}
+
+.mono{
+	font-family: 'Lucida Sans Typewriter', 'Courier New', monospace;
+	letter-spacing: -0.05em;
+}
+.nopaddingtop{
+	padding-top: 0;
+}
+
+.nopaddingbot{
+	padding-bottom: 0;
+}
 
 a {
 	text-decoration: none;
@@ -36,15 +63,16 @@ a {
 }
 
 a:hover {
-	color: #07B;
+	color: #AAAAAA;
 }
 
-article,
-nav,
-aside {
-	display: block;
+p,
+li {
+	font-size: 1.8em;
+	line-height: 1.2;
+	padding-top: 0.8em;
+	padding-bottom: 1em;
 }
-
 
 
 /* -------------------------------------------------- */
@@ -52,7 +80,7 @@ aside {
 /* -------------------------------------------------- */
 
 .row {
-	text-align:center;
+	text-align: center;
 }
 
 .rowmax {
@@ -66,205 +94,33 @@ aside {
 	background: #FFF;
 }
 
-#head,
-#main, 
-#footer {
-	background: #a6bac6;
+#main{
+ /*	background: #a6bac6; */
 }
-
-
-/*  #####  HEAD ELEMENTS  #####  */
-
-
-#metanav {	
-	float: right;
-}
-
-#logo {
-
-}
-
-#mainnav {
-	clear: right;
-	float: right;
-}
-
-#navtoggle {
-	float:right;
-	cursor: pointer;
-	width: 3em;
-	height: 3em;
-	display: none;
-	position: relative;
-	margin-left: 2em;
-}
-
-#navtoggle .bar {
-	position: absolute;
-	left: 0;
-	top: 1.3em;
-	background: #666;
-	border-radius: 1px;
-	height: 4px;
-	width: 3em;
-	transform: rotate(0deg);
-}
-
-#navtoggle .bar.n1{
-	top: 0.4em;
-	transition: transform 0.3s, top 0.3s ease 0.3s;
-}
-#navtoggle .bar.n2{
-	opacity: 1;
-	transition: opacity 1ms linear 0.3s;
-}
-#navtoggle .bar.n3{
-	top: 2.2em;
-	transition: transform 0.3s, top 0.3s ease 0.3s;
-}
-
-.shownav #navtoggle .bar.n1{
-	top: 1.3em;
-	transform: rotate(45deg);	
-	transition: top 0.3s, transform 0.3s ease 0.3s;
-}
-.shownav #navtoggle .bar.n2{
-	opacity: 0;	
-}
-.shownav #navtoggle .bar.n3{
-	top: 1.3em;
-	transform: rotate(-45deg);	
-	transition: top 0.3s, transform 0.3s ease 0.3s;
-}
-
-/*  #####  PAGE ELEMENTS  #####  */
-
-#main .col {
-	float: left;
-}
-
-#leftcol {
-	width: 30%;
-}
-
-#maincol {
-	width: 100%;
-}
-#leftcol + #maincol {
-	width: 70%;
-}
-
-
-/*  #####  FOOTER ELEMENTS  #####  */
-
-#footer div {
-	float:left;
-}
-
-#footernav {
-	float: right;
-}
-
-
-
-/* -------------------------------------------------- */
-/*    NAVIGATION                                      */
-/* -------------------------------------------------- */
-
-ul.nav {
-	list-style:none;
-}
-ul.nav li{
-
-}
-.nav a {
-	display: inline-block;
-	font-size: 1.8em;
-	text-decoration: none;
-	padding: 0.2em 0;
-	margin-left:1.2em;
-}
-
-.nav a:hover {
-	text-decoration: none;
-}
-
-
-a.act {
-	font-weight: bold;
-}
-
-#metanav li, #mainnav li, #footer li {
-	float: left;
-}
-
-
-
-/* ---- Mainnav -----*/
-
-#mainnav a {
-	background: #FFF;
-	border-radius: 3px;
-	padding: 0.3em 0.6em;
-}
-#mainnav li ul {
-	display: none;
-	padding-left: 2em;
-}
-
-
-
-/* ---- footer ----- */
-#footer a {
-	
-}
-
-
 
 /* -------------------------------------------------- */
 /*    CONTENT DESIGN                                  */
 /* -------------------------------------------------- */
 
-h1,h2,h3 {
-	font-size: 3.2em;
+h1,h2 {
+	font-size: 2em;
 	line-height: 1.1em;
 	font-weight: normal;
-	padding-bottom: 0.8em;
+	font-family: 'Lucida Sans Typewriter', 'Courier New', monospace;
+	letter-spacing: -0.05em;
+
 }
-h1,h2 {
-	color: #000;
-}
-h3 {
-	color: #888;
+h2 {
+	padding-top: 0.6em; 
+	padding-bottom: 0.6em; 
+	font-size: 3em;
+	font-weight: bold;
 }
 
 
 span.spamprotection{
 	display: none;
 }
-
-p,
-li {
-	font-size: 1.8em;
-	line-height: 1.5em;
-	padding-bottom: 0.8em;
-}
-
-textarea,
-input {
-	font-size: inherit;
-}
-input[type="text"],
-input[type="password"],
-textarea {
-	border: 1px solid #DDD;
-}
-input[type="text"]:focus,
-input[type="password"]:focus,
-textarea:focus {
-	border-color: #888;
-}
-
 
 @media (max-width: 1240px){ 
 
